@@ -4,13 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Best Computers offers high-quality hardware services including repairs, upgrades, and maintenance for all computer brands.">
+    <meta name="keywords" content="computer repair, hardware service, PC maintenance, laptop repair, Best Computers">
+    <meta name="author" content="Best Computers">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Best Computers - Hardware Services">
+    <meta property="og:description" content="Reliable and professional computer hardware services for all your needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bestcomputers.com">
+    <meta property="og:image" content="https://www.bestcomputers.com/logo.png">
     <title> Best Computers </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="Fixnix HTML 5 Template " />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,7 +103,7 @@
                         <div class="main-menu-two__wrapper-inner">
                             <div class="main-menu-two__left">
                                 <div class="main-menu-two__logo">
-                                    <a href="index.html"><img src="assets/images/resources/BCN.webp" alt=""></a>
+                                    <a href="index.html"><img src="assets/images/resources/BCNH.webp" alt=""></a>
                                 </div>
                             </div>
                             <div class="main-menu-two__right">
@@ -1184,6 +1196,14 @@
 
     <!-- template js -->
     <script src="assets/js/fixnix.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentTitle = document.title;
+            if (currentTitle.includes("index.html")) {
+                document.title = currentTitle.replace("index.html", "").trim();
+            }
+        });
+    </script>
 </body>
 
 </html>
