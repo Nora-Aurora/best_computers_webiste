@@ -7,8 +7,8 @@
     <title> Best Computers </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/BC32.webp" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/BCICON.webp" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <meta name="description" content="Fixnix HTML 5 Template " />
 
@@ -334,19 +334,14 @@
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
     <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
 
-
-
-
     <!-- template js -->
     <script src="assets/js/fixnix.js"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let currentTitle = document.title;
-            if (currentTitle.includes("404.html")) {
-                document.title = currentTitle.replace("404.html", "").trim();
-            }
-        });
+        if (window.location.pathname.endsWith("index.html")) {
+            const newUrl = window.location.href.replace("index.html", "");
+            window.history.replaceState(null, "", newUrl);
+        }
     </script>
 
 </body>
